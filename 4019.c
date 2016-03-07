@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #define MAX_NUM 101
 
-int main()
+void main()
 {
 	int solveProblem(int** M, int a, int b, int n);
 
@@ -70,19 +70,17 @@ int main()
 				K[l][i]  = solveProblem(p, a, b, n);//K数组表示第l个组数据的第i个问题的解
 			}
 		}
-	}
 
-	//答案统一输出
-	for (l = 0; l < c; ++l)
-	{
+		//输出答案
 		printf("Case %d:\n", l+1);
 		for (i = 0; i < k; ++i)
 		{
 			printf("%d\n", K[l][i]);
 		}
+		
 	}
 
-	return 0;
+	//答案统一输出
 }
 
 int solveProblem(int** M, int a, int b, int n)

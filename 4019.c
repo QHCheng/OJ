@@ -79,8 +79,6 @@ void main()
 		}
 		
 	}
-
-	//答案统一输出
 }
 
 int solveProblem(int** M, int a, int b, int n)
